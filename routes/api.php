@@ -11,3 +11,6 @@ Route::apiResource('usuarios',UsuarioController::class);
 Route::apiResource('enderecos', EnderecoController::class);
 Route::apiResource('cidades', CidadeController::class);
 Route::apiResource('estados', EstadoController::class);
+
+Route::get('usuarioCidade', 'App\Http\Controllers\api\UsuarioController@usuarioCidade');
+Route::get('usuarioEstado', 'App\Http\Controllers\api\UsuarioController@usuarioEstado');
